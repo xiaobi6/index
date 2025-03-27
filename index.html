@@ -33,18 +33,32 @@
 <body class="bg-gray-50 text-apple-black">
     <header class="w-full bg-white shadow-sm">
         <div class="container mx-auto px-4 py-6">
-            <h1 class="text-4xl md:text-5xl font-bold text-center text-apple-blue">
-                Monster Survivors
-            </h1>
-            <p class="text-xl md:text-2xl text-center mt-4 text-apple-gray">
-                Survive endless waves of monsters in this thrilling action-packed adventure
-            </p>
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-apple-blue">
+                        Monster Survivors
+                    </h1>
+                    <p class="text-lg md:text-xl mt-4 text-apple-gray">
+                        Survive endless waves of monsters in this thrilling action-packed adventure
+                    </p>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#game-section" class="text-lg font-medium text-apple-blue hover:text-blue-600 transition-colors">Play Now</a>
+                    <a href="#tips" class="text-lg font-medium text-apple-blue hover:text-blue-600 transition-colors">Tips</a>
+                    <a href="#features" class="text-lg font-medium text-apple-blue hover:text-blue-600 transition-colors">Features</a>
+                    <a href="#controls" class="text-lg font-medium text-apple-blue hover:text-blue-600 transition-colors">Controls</a>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-8">
-        <section class="max-w-4xl mx-auto">
-            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
+        <section id="game-section" class="max-w-6xl mx-auto">
+            <h1 class="text-2xl md:text-3xl font-bold mb-6 text-[#007bff]">
+                Play Monster Survivors
+            </h1>
+            
+            <div class="aspect-w-16 aspect-h-9" style="height: 80vh;">
                 <iframe 
                     src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
                     class="w-full h-full"
@@ -53,80 +67,125 @@
                 </iframe>
             </div>
 
-            <section class="mt-12">
-                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-apple-blue">
-                    Game Introduction
-                </h2>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <p class="text-lg mb-4">
-                        Monster Survivors is an exhilarating survival action game where players face endless waves of monsters in a dangerous game world. With its unique auto-combat system, players can focus on strategic movement and skill selection, experiencing an unprecedented survival adventure.
-                    </p>
-                    <div class="grid md:grid-cols-2 gap-4 mt-4">
-                        <div class="border-l-4 border-apple-blue pl-4">
-                            <h3 class="font-semibold mb-2">Game Features</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li>Unique auto-combat system</li>
-                                <li>Rich skill upgrade paths</li>
-                                <li>Randomly generated levels</li>
-                                <li>Diverse monster types</li>
-                            </ul>
-                        </div>
-                        <div class="border-l-4 border-apple-blue pl-4">
-                            <h3 class="font-semibold mb-2">Gameplay</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li>Dodge monsters through movement</li>
-                                <li>Auto-attack nearby enemies</li>
-                                <li>Collect experience points to level up</li>
-                                <li>Choose powerful skill combinations</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="mt-8 flex justify-center">
+                <a href="#game-section" class="game-button px-16 py-5 text-2xl rounded-lg text-black transform hover:scale-105 transition-transform">
+                    PLAY NOW
+                </a>
+            </div>
 
-            <section class="mt-12">
-                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-apple-blue">
+            <section id="features" class="mt-16">
+                <h2 class="text-3xl font-bold mb-8 text-[#007bff]">
                     Game Features
                 </h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h2 class="text-xl font-semibold mb-3">Endless Adventure</h2>
-                        <p>Face increasingly challenging waves of monsters as you progress through endless levels of intense action.</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-[#FF6B00]">Multiple Characters</h3>
+                        <p>Choose from various characters, each with unique starting weapons and abilities.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h2 class="text-xl font-semibold mb-3">Character Development</h2>
-                        <p>Upgrade your abilities, unlock new powers, and customize your character as you become stronger.</p>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-[#00C853]">Weapon Evolution</h3>
+                        <p>Combine weapons and passive items to create powerful evolved weapons with special effects.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-[#BA68C8]">Level Up System</h3>
+                        <p>Gain experience by defeating enemies and level up to choose new weapons or upgrades.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-[#FF4081]">Boss Battles</h3>
+                        <p>Face off against massive boss monsters that appear at specific time intervals.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-[#FFD700]">Treasure Chests</h3>
+                        <p>Find and open treasure chests to receive random items, gold, or special power-ups.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-[#2196F3]">Daily Challenges</h3>
+                        <p>Complete daily challenges to earn rewards and climb the global leaderboard.</p>
                     </div>
                 </div>
             </section>
 
-            <section class="mt-12">
-                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-apple-blue">
-                    How to Play
-                </h2>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Use WASD or arrow keys to move your character</li>
-                        <li>Automatically attack nearby enemies</li>
-                        <li>Collect experience orbs to level up</li>
-                        <li>Choose new abilities when leveling up</li>
-                        <li>Survive as long as possible!</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="grid md:grid-cols-2 gap-8 mt-16">
+                <section id="howtoplay">
+                    <h2 class="text-3xl font-bold mb-6 text-[#007bff]">
+                        How to Play
+                    </h2>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <ul class="space-y-3">
+                            <li>Use WASD or arrow keys to move your character</li>
+                            <li>Automatically attack nearby enemies</li>
+                            <li>Collect experience orbs to level up</li>
+                            <li>Choose new abilities when leveling up</li>
+                            <li>Survive as long as possible!</li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section class="mt-12">
-                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-apple-blue">
-                    Tips for Success
+                <section id="tips">
+                    <h2 class="text-3xl font-bold mb-6 text-[#007bff]">
+                        Tips for Success
+                    </h2>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <p class="mb-4">Master these strategies to survive longer in Monster Survivors:</p>
+                        <ul class="space-y-3">
+                            <li>Keep moving to avoid being surrounded</li>
+                            <li>Prioritize defensive upgrades early game</li>
+                            <li>Collect all experience orbs to stay competitive</li>
+                            <li>Balance your build between offense and defense</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <section id="controls" class="mt-16">
+                <h2 class="text-3xl font-bold mb-6 text-[#007bff]">
+                    Game Controls
                 </h2>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <p class="mb-4">Master these strategies to survive longer in Monster Survivors:</p>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Keep moving to avoid being surrounded</li>
-                        <li>Prioritize defensive upgrades early game</li>
-                        <li>Collect all experience orbs to stay competitive</li>
-                        <li>Balance your build between offense and defense</li>
-                    </ul>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-[#9333EA]">Keyboard Controls</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <span class="font-bold">WASD or Arrow Keys:</span>
+                                Move your character
+                            </li>
+                            <li>
+                                <span class="font-bold">Space:</span>
+                                Pause the game
+                            </li>
+                            <li>
+                                <span class="font-bold">E or Enter:</span>
+                                Select/Confirm
+                            </li>
+                            <li>
+                                <span class="font-bold">Esc:</span>
+                                Back/Menu
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-[#F97316]">Mobile Controls</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <span class="font-bold">Virtual Joystick:</span>
+                                Appears on the left side of the screen for movement
+                            </li>
+                            <li>
+                                <span class="font-bold">Tap Buttons:</span>
+                                Menu and action buttons on the right side
+                            </li>
+                            <li>
+                                <span class="font-bold">Swipe:</span>
+                                Navigate menus and selection screens
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </section>
